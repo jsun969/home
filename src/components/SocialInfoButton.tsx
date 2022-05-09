@@ -23,7 +23,7 @@ const SocialInfoButton: React.FC<SocialInfoButtonProps> = ({
       <button
         className={`ri-${icon}-${
           showText ? 'fill' : 'line'
-        } ri-xl dark:text-slate-200 ${className}`}
+        } ri-xl h-6 dark:text-slate-200 ${className}`}
         onClick={() => setShowText(!showText)}
       />
       {showText && (
