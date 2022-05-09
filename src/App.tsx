@@ -2,8 +2,10 @@ import React from 'react';
 
 const App: React.FC = () => {
   return (
-    <div className="text-3xl font-bold">
-      Hello, Vite + React + TS + Tailwind
+    <div className="flex h-screen">
+      <div className="m-auto">
+        <div className="text-5xl">您好, 我是荆棘Justin</div>
+      </div>
     </div>
   );
 };
