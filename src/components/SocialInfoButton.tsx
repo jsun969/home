@@ -20,14 +20,14 @@ const SocialInfoButton: React.FC<SocialInfoButtonProps> = ({
 
   return (
     <div>
-      <i
+      <button
         className={`ri-${icon}-${
           showText ? 'fill' : 'line'
-        } ri-xl ${className}`}
+        } ri-xl dark:text-slate-200 ${className}`}
         onClick={() => setShowText(!showText)}
       />
       {showText && (
-        <div className="text-sm">
+        <div className="text-sm dark:text-slate-200">
           {href ? (
             <a href={href} className="underline" target="_blank">
               {text}

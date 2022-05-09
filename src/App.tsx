@@ -1,17 +1,22 @@
 import React from 'react';
 import SocialInfoButton from './components/SocialInfoButton';
+import ThemeToggleButton from './components/ThemeToggleButton';
 
 const App: React.FC = () => {
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen dark:bg-slate-900 relative">
+      <div className="absolute top-4 right-4">
+        <ThemeToggleButton />
+      </div>
+
       <div className="m-auto text-center flex flex-col gap-6">
         <img
           alt="avatar"
           src="/avatar.png"
           className="m-auto border-2 w-32 rounded-full"
         />
-        <div className="text-5xl">您好, 我是荆棘</div>
-        <div>
+        <div className="text-5xl dark:text-white">您好, 我是荆棘</div>
+        <div className="text-slate-700 dark:text-slate-400">
           男 / {new Date().getFullYear() - 2005}岁 / 上海人 / Typescript全栈 /
           React & Nest
         </div>
