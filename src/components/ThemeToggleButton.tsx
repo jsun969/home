@@ -2,14 +2,18 @@ import React, { useEffect, useState } from 'react';
 
 const ThemeToggleButton: React.FC = () => {
   const [darkMode, setDarkMode] = useState(
-    window.matchMedia('(prefers-color-scheme: dark)').matches,
+    localStorage.theme === 'dark' ||
+      (!Reflect.has(localStorage, 'theme') &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches),
   );
 
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
     } else {
       document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
     }
   }, [darkMode]);
 
