@@ -11,8 +11,8 @@ const AvatarTitleDesc: React.FC = () => {
         src="/avatar.png"
         className="m-auto border-2 w-32 rounded-full"
       />
-      <div className="text-5xl dark:text-white">{t('greet')}</div>
-      <div className="text-slate-700 dark:text-slate-400">
+      <div className="text-3xl sm:text-5xl dark:text-white">{t('greet')}</div>
+      <div className="text-sm sm:text-base text-slate-700 dark:text-slate-400">
         {t('description.male')} / {new Date().getFullYear() - 2005}
         {t('description.age')} / {t('description.shanghai')} / Typescript{' '}
         {t('description.full-stack')} / React & Nest
