@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const AvatarTitleDesc: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <img
@@ -8,10 +11,11 @@ const AvatarTitleDesc: React.FC = () => {
         src="/avatar.png"
         className="m-auto border-2 w-32 rounded-full"
       />
-      <div className="text-5xl dark:text-white">您好, 我是荆棘</div>
+      <div className="text-5xl dark:text-white">{t('title')}</div>
       <div className="text-slate-700 dark:text-slate-400">
-        男 / {new Date().getFullYear() - 2005}岁 / 上海人 / Typescript全栈 /
-        React & Nest
+        {t('description.male')} / {new Date().getFullYear() - 2005}
+        {t('description.age')} / {t('description.shanghai')} / Typescript{' '}
+        {t('description.full-stack')} / React & Nest
       </div>
     </>
   );
