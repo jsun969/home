@@ -20,7 +20,7 @@ const App: React.FC = () => {
         <LanguageToggleButton />
       </div>
 
-      <div className="m-auto text-center flex flex-col gap-6">
+      <div className="m-auto text-center flex flex-col gap-3 sm:gap-6">
         <AvatarTitleDesc />
         <SocialInfo />
       </div>
