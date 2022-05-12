@@ -1,30 +1,30 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 interface SocialInfoButtonProps {
   /**
    * @see https://remixicon.com/
    */
   icon: string;
-  className?: string;
   text: string;
   href?: string;
+  onClick: () => void;
+  showText?: boolean;
 }
 
 const SocialInfoButton: React.FC<SocialInfoButtonProps> = ({
   icon,
-  className,
   href,
   text,
+  onClick,
+  showText,
 }) => {
-  const [showText, setShowText] = useState(false);
-
   return (
     <div>
       <button
         className={`ri-${icon}-${
           showText ? 'fill' : 'line'
-        } ri-xl h-6 dark:text-slate-200 ${className}`}
-        onClick={() => setShowText(!showText)}
+        } ri-xl h-6 dark:text-slate-200`}
+        onClick={onClick}
       />
       {showText && (
         <div className="text-sm dark:text-slate-200">
