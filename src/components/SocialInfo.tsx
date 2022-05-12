@@ -5,8 +5,8 @@ const info = [
   { icon: 'github', text: 'jsun969', href: 'https://github.com/jsun969' },
   { icon: 'qq', text: '1351083056' },
   { icon: 'wechat', text: 'jsun969' },
-  { icon: 'telegram', text: '@jsun969', href: '"https://t.me/jsun969"' },
   { icon: 'discord', text: 'jsun969#1144' },
+  { icon: 'telegram', text: '@jsun969', href: '"https://t.me/jsun969"' },
   { icon: 'twitter', text: 'jsun969', href: 'https://twitter.com/jsun969' },
   { icon: 'mail', text: 'i@jsun969.cn', href: 'mailto:i@jsun969.cn' },
 ];
