@@ -1,5 +1,6 @@
 {
-  "title": "您好, 我是荆棘",
+  "title": "荆棘的主页",
+  "greet": "您好, 我是荆棘",
   "description": {
     "male": "男",
     "age": "岁",
