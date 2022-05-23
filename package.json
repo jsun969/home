@@ -13,6 +13,7 @@
     "lint": "eslint \"**/*.{ts,tsx}\" --fix"
   },
   "dependencies": {
+    "clsx": "^1.1.1",
     "i18next": "^21.8.1",
     "i18next-browser-languagedetector": "^6.1.4",
     "react": "^18.0.0",

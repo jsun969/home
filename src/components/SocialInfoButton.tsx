@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import React from 'react';
 
 interface SocialInfoButtonProps {
@@ -21,9 +22,10 @@ const SocialInfoButton: React.FC<SocialInfoButtonProps> = ({
   return (
     <div>
       <button
-        className={`ri-${icon}-${
-          showText ? 'fill' : 'line'
-        } ri-xl h-6 dark:text-slate-200`}
+        className={clsx(
+          'ri-xl h-6 dark:text-slate-200',
+          `ri-${icon}-${showText ? 'fill' : 'line'}`,
+        )}
         onClick={onClick}
       />
       {showText && (

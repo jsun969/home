@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import React, { useEffect, useState } from 'react';
 
 const ThemeToggleButton: React.FC = () => {
@@ -19,7 +20,10 @@ const ThemeToggleButton: React.FC = () => {
 
   return (
     <button
-      className={`${darkMode ? 'ri-moon-fill' : 'ri-sun-fill'} dark:text-white`}
+      className={clsx(
+        'dark:text-white',
+        darkMode ? 'ri-moon-fill' : 'ri-sun-fill',
+      )}
       onClick={() => {
         setDarkMode(!darkMode);
       }}
