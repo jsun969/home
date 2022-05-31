@@ -6,6 +6,12 @@
   font-family: 'LXGWZhenKai';
   src: url('/LXGWZhenKai.ttf');
 }
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('/Poppins-Regular.ttf');
+}
+
 * {
-  font-family: 'LXGWZhenKai';
+  font-family: 'Poppins-Regular', 'LXGWZhenKai';
 }
